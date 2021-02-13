@@ -18,7 +18,17 @@ namespace Business.Concrete
         public List<Product> GetAll()
         {
             //iş kodları
-            return _productDal.GetAll();
+            return _productDal.GetAll(); //ProductDal daki GetAll() methodu
+        }
+
+        public List<Product> GetByCategoryId(int id)
+        {
+            return _productDal.GetAll(p => p.CategoryId == id);
+        }
+
+        public List<Product> GetByCUnitPrice(decimal min, decimal max)
+        {
+            return _productDal.GetAll(p => p.UnitPrice >= min && p.UnitPrice <= max);
         }
     }
 }
