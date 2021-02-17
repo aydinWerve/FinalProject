@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace DataAccess.Concrete.InMemory
 {
@@ -63,12 +64,18 @@ namespace DataAccess.Concrete.InMemory
         {
             throw new NotImplementedException();
         }
-        /*
-        public List<Product> GetAllByCategory(int categoryId)
+
+        public List<ProductDetailDTO> GetProductDetailDTOs()
         {
-            return _products.Where(p => p.CategoryId == categoryId).ToList();
+            throw new NotImplementedException();
         }
-        */
+
+        /*
+public List<Product> GetAllByCategory(int categoryId)
+{
+   return _products.Where(p => p.CategoryId == categoryId).ToList();
+}
+*/
         public void Update(Product product)
         {
             Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
