@@ -11,6 +11,6 @@ namespace Business.Abstract
     {
         List<Product> GetAll();
         List<Product> GetByCategoryId(int id); //Category id sine göre getir
-        List<Product> GetByCUnitPrice(decimal min, decimal max); //Şu fiyat aralığında olan ürünleri getir.
+        List<Product> GetByUnitPrice(decimal min, decimal max); //Şu fiyat aralığında olan ürünleri getir.
     }
 }

@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
-using Entities.Abstract;
+using Core.Entities;
 
-namespace DataAccess.Abstract
+
+// Core katmanı diğer katmanları referans almaz !!
+namespace Core.DataAccess
 {
     //class : referans tip olabilir demek int vs yazılmasını engeller
     //IEntity : IEntity veya IEntity ı implemente eden bir nesne olabilir
