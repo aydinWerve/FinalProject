@@ -71,11 +71,11 @@ namespace DataAccess.Concrete.InMemory
         }
 
         /*
-public List<Product> GetAllByCategory(int categoryId)
-{
-   return _products.Where(p => p.CategoryId == categoryId).ToList();
-}
-*/
+        public List<Product> GetAllByCategory(int categoryId)
+        {
+           return _products.Where(p => p.CategoryId == categoryId).ToList();
+        }
+        */
         public void Update(Product product)
         {
             Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);

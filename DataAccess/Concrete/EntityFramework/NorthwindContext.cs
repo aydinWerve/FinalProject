@@ -15,7 +15,7 @@ namespace DataAccess.Concrete.EntityFramework
         }
 
         //Benim hangi nesnem hangi nesneye karşılık gelecek
-        //Benim product nesnemi veri tabanındaki products ile bağla
+        //Benim Product nesnemi veri tabanındaki Products ile bağla
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
