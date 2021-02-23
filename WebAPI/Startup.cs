@@ -32,8 +32,8 @@ namespace WebAPI
             services.AddControllers();
 
             //içinde data tutmadýðýn sürece kullan
-            services.AddSingleton<IProductService, ProductManager>(); //Bana arka planda bir referans oluþtur demek. Yani arka planda new liyor
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService, ProductManager>(); //Bana arka planda bir referans oluþtur demek. Yani arka planda new liyor
+            //services.AddSingleton<IProductDal, EfProductDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
