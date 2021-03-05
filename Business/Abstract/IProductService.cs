@@ -14,8 +14,8 @@ namespace Business.Abstract
         IDataResult<List<Product>> GetAll();
         IResult Add(Product product);
         IResult Update(Product product);
-        IDataResult<List<Product>> GetByCategoryId(int id); //Category id sine göre getir
-        IDataResult<List<Product>> GetByUnitPrice(decimal min, decimal max); //Şu fiyat aralığında olan ürünleri getir.
+        IDataResult<List<Product>> GetByCategoryId(int id);
+        IDataResult<List<Product>> GetByUnitPrice(decimal min, decimal max);
         IDataResult<Product> GetById(int productId);
         IDataResult<List<ProductDetailDTO>> GetProductDetailDTOs();
         IResult AddTransactionalTest(Product product);
