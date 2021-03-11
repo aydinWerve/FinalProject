@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Business.Abstract;
 using Business.Concrete;
@@ -27,6 +28,8 @@ namespace WebAPI.Controllers
         [HttpGet("getall")] //Beni dışardan böyle çağır.
         public IActionResult GetAll() //getall
         {
+            Thread.Sleep(1000);
+
             var result = _productService.GetAll();
             if (result.Success)
             {
